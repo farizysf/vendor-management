@@ -1,0 +1,212 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.full-screen{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("bg2.jpeg");
+    background-size: contain;
+}
+
+.header{
+    width: 100%;
+    background-image: url("bg1.jpeg");
+    display: flex;
+    align-items: center;
+}
+
+img{
+    width: 30%;
+    height: auto;
+    padding: 1em 0;
+}
+
+li{
+    list-style: none;
+    display: inline;
+    margin: 4% 1%;
+}
+
+li a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    color: black;
+    padding: 1em 0.8em;
+}
+
+li a:hover{
+    background-color: rgb(177, 20, 177);
+    color: white;
+}
+
+ul li:not(ul li:first-of-type){
+    float: right;
+}
+
+.title h3{
+    padding: 0.8em;
+    font-size: 1.8em;
+}
+
+#keyword{
+    text-align: center;
+    font-size: 1.6em;
+    padding: 0.8em;
+}
+
+table{
+    width: 80%;
+    background-image: url("bg1.jpeg");
+    margin: auto;
+    border-collapse: collapse;
+    overflow: auto;
+}
+
+td, th{
+    font-size: 1em;
+    padding: 0.4em;
+}
+
+@media only screen and (min-width: 712px) and (orientation: portrait){
+    img{
+        width: 20%;
+        padding: 2.5em 0;
+    }
+
+    li{
+        margin: 4% 1%;
+    }
+    
+    li a{
+        font-size: 1.8em;
+        padding: 1em 0.8em;
+    }
+
+    .title h3{
+        font-size: 2em;
+    }
+
+    #keyword{
+        font-size: 1.8em;
+    }
+
+    td, th{
+        font-size: 1.2em;
+        padding: 0.6em;
+    }    
+}
+
+@media only screen and (orientation: landscape){
+    .full-screen{
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .header{
+        height: 22.5%;
+    }
+
+    img{
+        width: 15%;
+        height: auto;
+        padding: 2.5em 0;
+    }
+
+    li{
+        margin: 4% 1%;
+    }
+
+    li a{
+        font-size: 1.4em;
+    }
+
+    .title h3{
+        padding: 0.6em;
+        font-size: 1.6em;
+    }
+
+    #keyword{
+        font-size: 1.4em;
+        padding: 0.8em;
+    }
+ 
+    table{
+        width: 60%;
+    }
+    
+    td, th{
+        font-size: 0.8em;
+        padding: 0.4em;
+    }    
+
+}
+
+@media only screen and (min-width: 1024px) and (orientation: landscape){
+    .full-screen{
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .header{
+        height: 15%;
+    }
+
+    img{
+        width: 12.5%;
+        height: auto;
+        padding: 2.5em 0;
+    }
+
+    li{
+        margin: 3% 1%;
+    }
+
+    li a{
+        font-size: 1.4em;
+    }
+ 
+    .title h3{
+        padding: 1em;
+        font-size: 2em;
+    }
+
+    #keyword{
+        font-size: 1.8em;
+        padding: 0.8em;
+    }
+
+    table{
+        width: 60%;
+    }
+    
+    td, th{
+        font-size: 1.2em;
+        padding: 0.6em;
+    }    
+
+    .filter{
+        width: 60%;
+        margin: auto;
+    }
+
+    button{
+        width: 10%;
+        background-color: turquoise;
+        display: block;
+        float: right;
+        padding: 0.4em;
+        font-size: 1em;
+        margin-top: 1.4em;
+    }
+
+}
